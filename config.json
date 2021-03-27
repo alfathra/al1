@@ -1,0 +1,74 @@
+{
+"Account": {
+"Username": "jakeeasy14",
+"Password": "ratih212",
+"Currency": "doge"
+     },
+ "Target Profit": "100",
+ "Target Win": "10000",
+ "Lose Target": "0",
+ "Reset If Target Profit": "OFF",
+ "Reset If Target Win": "OFF",
+ "Interval": "0",
+ "Reset Profit Auto": "0.00001",
+ "Config": [{
+
+    "Name Bet Set": " [1] BETSET MINING CHANCE 40-55% ! ",
+     "Base Bet": "0.01",
+     "Max Bet": "OFF",
+     "Chance": "27.27",
+     "Random Chance": {
+          "Toggle": "On",
+          "Min": "11",
+          "Max": "32"
+        },
+     "Bet": {
+          "Bet": "L",
+          "H / L": {
+              "Toggle": "on",
+              "If Lose": "3",
+              "If Win": "2",
+              "Random": "on"
+            }
+        },
+     "If Win": "0.8",
+     "If Lose": "1.32",
+     "Reset If Profit": "0.00000001",
+     "Reset If Win": "2",
+     "Interval": "0"
+     },{
+
+     "Name Bet Set": " [2] Mining Chance 45 %",
+     "Base Bet": "0.000001111111111111",
+     "Max Bet": "OFF",
+     "Chance": "45",
+     "Random Chance": {
+          "Toggle": "ON",
+          "Min": "5",
+          "Max": "50"
+        },
+     "Bet": {
+          "Bet": "L",
+          "H / L": {
+              "Toggle": "ON",
+              "If Lose": "3",
+              "If Win": "1",
+              "Random": "ON"
+            }
+        },
+     "If Win": "1",
+     "If Lose": "1.77777777777",
+     "Reset If Win": "1",
+     "Reset If Profit": "0.00000001",
+     "Interval": "2"
+     }
+  ],
+  "Auto Wd": {
+       "Toggle": "OFF",
+       "If Balance": "500",
+       "Wallet Address":   "DEqS864FnQuwUcD4n6j1nsQRtVQstHC7NZ",
+       "Amount": "11"
+      },
+  "User-Agent": "Android Phone / Chrome 65 [Mobile]:Mozilla/5.0 (Linux; Android 8.0; BLA-L29 Build/HUAWEIBLA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.6 Mobile Safari/537.36"
+
+}
