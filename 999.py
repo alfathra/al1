@@ -198,7 +198,7 @@ def dice(ws,ls):
    try:
      r1 = c.post(url,headers=ua,data=data)
      jsn = json.loads(r1.text)
-    
+      # rdm = randint(1,3)
      jumbl = jsn["StartingBalance"] + int(jsn["PayOut"]) - int(amount)
      jum = int(jsn["PayOut"]) - int(amount)
      prof = (float(jsn["StartingBalance"] + int(jsn["PayOut"]) - int(amount) - jumbl)/(10 ** 8))
@@ -222,8 +222,10 @@ def dice(ws,ls):
      start_time = time.time()
      reset_if_profit = obj["Config"][urut]["Reset If Profit"]
      tot_if_profit = obj["Config"][urut]["Reset If Profit"]
+     rdm = randint(1,5)
      while True:
-        rdm = random.randint(1,5)
+        rdm = randint(1,2)
+        rds = randint(1,2)
         rd = obj["Config"][urut]["Bet"]["H / L"]["Random"] == "On" or obj["Config"][urut]["Bet"]["H / L"]["Random"] == "ON" or obj["Config"][urut]["Bet"]["H / L"]["Random"] == "on"
         mn = obj["Config"][urut]["Bet"]["H / L"]["Toggle"]
         current_time = time.time()
@@ -245,7 +247,7 @@ def dice(ws,ls):
               else:
                  rolebet = " L "
               won = 0
-           if los == int(rdm):
+           if los == int(rds):
               if rolebet == " L ":
                  rolebet = " H "
               else:
@@ -260,10 +262,10 @@ def dice(ws,ls):
                    rolebet = " L "
                won = 0
             if los == int(obj["Config"][urut]["Bet"]["H / L"]["If Lose"]):
-               if rolebet == " L ":
-                  rolebet = " H "
-               else:
+               if rolebet == " H ":
                   rolebet = " L "
+               else:
+                  rolebet = " H "
                los = 0
         else:
             rolebet = obj["Config"][urut]["Bet"]["Bet"]
@@ -272,11 +274,11 @@ def dice(ws,ls):
            waktu = datetime.now().strftime('%M')
            if int(waktu) > int(menit - 1):
               menit = int(menit) + int(obj["Interval"])
+              urut += 1
               if prof > float(obj["Reset Profit Auto"]):
-                 urut += 1
+                 urut = 0
                  print ("Change Bet Set "+obj["Config"][urut]["Name Bet Set"]+"                           ")
-                 if urut == 1:
-                    urut = 0
+
                 
               slp = int(obj["Config"][urut]["Interval"]) / 1000
               limit_a = int(obj["Config"][urut]["Reset If Win"]) - 1
