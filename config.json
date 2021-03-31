@@ -1,6 +1,6 @@
 {
 "Account": {
-"Username": "seblak212",
+"Username": "sabilsyg121202",
 "Password": "ratih212",
 "Currency": "doge"
      },
@@ -14,13 +14,13 @@
  "Config": [{
 
     "Name Bet Set": " [1] BETSET MINING CHANCE 40-55% ! ",
-     "Base Bet": "0.01304",
+     "Base Bet": "0.01",
      "Max Bet": "OFF",
      "Chance": "27.27",
      "Random Chance": {
           "Toggle": "On",
-          "Min": "5",
-          "Max": "95"
+          "Min": "20.01",
+          "Max": "85.02"
         },
      "Bet": {
           "Bet": "L",
@@ -31,10 +31,10 @@
               "Random": "on"
             }
         },
-     "If Win": "1.0",
-     "If Lose": "1.02020202",
+     "If Win": "1.00505094",
+     "If Lose": "1.000500516",
      "Reset If Profit": "0.00000001",
-     "Reset If Win": "10",
+     "Reset If Win": "5",
      "Interval": "0"
      },{
 
