@@ -14,27 +14,27 @@
  "Config": [{
 
     "Name Bet Set": " [1] BETSET MINING CHANCE 40-55% ! ",
-     "Base Bet": "0.01",
+     "Base Bet": "0.01515151515",
      "Max Bet": "OFF",
      "Chance": "27.27",
      "Random Chance": {
           "Toggle": "On",
-          "Min": "20.01",
-          "Max": "35.02"
+          "Min": "5.01",
+          "Max": "75.10"
         },
      "Bet": {
           "Bet": "L",
           "H / L": {
               "Toggle": "on",
-              "If Lose": "2",
+              "If Lose": "3",
               "If Win": "1",
-              "Random": "off"
+              "Random": "on"
             }
         },
-     "If Win": "1.02",
-     "If Lose": "1.25",
+     "If Win": "1.01",
+     "If Lose": "1.202020",
      "Reset If Profit": "0.00000001",
-     "Reset If Win": "3",
+     "Reset If Win": "10",
      "Interval": "0"
      },{
 
