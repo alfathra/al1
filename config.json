@@ -20,7 +20,7 @@
      "Random Chance": {
           "Toggle": "On",
           "Min": "20.01",
-          "Max": "85.02"
+          "Max": "25.02"
         },
      "Bet": {
           "Bet": "L",
@@ -31,10 +31,10 @@
               "Random": "on"
             }
         },
-     "If Win": "1.00505094",
-     "If Lose": "1.000500516",
+     "If Win": "1.04",
+     "If Lose": "1.17",
      "Reset If Profit": "0.00000001",
-     "Reset If Win": "5",
+     "Reset If Win": "2",
      "Interval": "0"
      },{
 
