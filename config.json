@@ -25,14 +25,14 @@
      "Bet": {
           "Bet": "L",
           "H / L": {
-              "Toggle": "off",
-              "If Lose": "3",
+              "Toggle": "on",
+              "If Lose": "2",
               "If Win": "2",
-              "Random": "on"
+              "Random": "off"
             }
         },
-     "If Win": "1.04",
-     "If Lose": "1.17",
+     "If Win": "1.02",
+     "If Lose": "1.15",
      "Reset If Profit": "0.00000001",
      "Reset If Win": "2",
      "Interval": "0"
