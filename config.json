@@ -27,7 +27,7 @@
           "H / L": {
               "Toggle": "on",
               "If Lose": "2",
-              "If Win": "2",
+              "If Win": "1",
               "Random": "off"
             }
         },
